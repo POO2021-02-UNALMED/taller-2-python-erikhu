@@ -22,7 +22,7 @@ class Auto:
         Auto.cantidadCreados += 1
 
     def cantidadAsientos(self):
-        len(self.asientos)
+        len([asiento for asiento in self.asientos if asiento != None])
 
     def verificarIntegridad(self):
         for asiento in self.asientos:
