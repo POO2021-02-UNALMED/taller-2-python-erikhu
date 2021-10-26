@@ -15,7 +15,7 @@ class Auto:
     def __init__(self, modelo, precio, asientos, marca, motor, registro):
         self.modelo = modelo
         self.precio = precio
-        self.asientos = [asiento for asiento in asientos if asiento]
+        self.asientos = [asiento for asiento in asientos if asiento != None]
         self.marca = marca
         self.motor = motor
         self.registro = registro
